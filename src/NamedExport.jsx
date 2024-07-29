@@ -1,7 +1,12 @@
-export function NamedExport() {
+export function NamedExport(props) {
   return (
-    <h1>
-      Named Export
-    </h1>
+    <div>
+      <strong>
+        {props.author}
+      </strong>
+      <p>
+        {props.content}
+      </p>
+    </div>
   )
 }
