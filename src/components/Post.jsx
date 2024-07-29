@@ -1,3 +1,4 @@
+import { Comment } from './Comment'
 import styles from './Post.module.css'
 
 export function Post() {
@@ -16,7 +17,7 @@ export function Post() {
             <span>Web Developer</span>
           </div>
         </div>
-        <time title='29 de Julho às 13:40h' dateTime='2024-07-29 13:40:00'></time>
+        <time title='29 de Julho às 13:40h' dateTime='2024-07-29 13:40:00'>Publicado há 1h atrás</time>
       </header>
       <div className={styles.content}>
         <p>Fala galera</p>
@@ -40,7 +41,12 @@ export function Post() {
           </button>
         </footer>
       </form>
-
+      <div className={styles.commentList}>
+        <Comment />
+        <Comment />
+        <Comment />
+        <Comment />
+      </div>
     </article>
   )
 }
