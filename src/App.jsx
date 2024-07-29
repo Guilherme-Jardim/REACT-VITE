@@ -1,5 +1,5 @@
 import { Header } from './components/Header'
-import { NamedExport } from './NamedExport'
+import { Post } from './components/Post'
 import { Sidebar } from './components/Sidebar'
 
 import './global.css'
@@ -12,7 +12,7 @@ export function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <NamedExport 
+          <Post 
             author="Propertie 1" 
             content="Propertie 2" 
           />
