@@ -12,10 +12,8 @@ export function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <Post 
-            author="Propertie 1" 
-            content="Propertie 2" 
-          />
+          <Post />
+          <Post />
         </main>
       </div>
     </div>
