@@ -1,11 +1,13 @@
+import { NamedExport } from './NamedExport'
 
-
-function App() {
-
-
+export function App() {
   return (
-    <h1>hello world</h1>
+    <div>
+      <NamedExport />
+      <NamedExport />
+      <NamedExport />
+      <NamedExport />
+      <NamedExport />
+    </div>
   )
 }
-
-export default App
