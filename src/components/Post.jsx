@@ -2,6 +2,35 @@ import { Avatar } from './Avatar'
 import { Comment } from './Comment'
 import styles from './Post.module.css'
 
+const posts = [
+  {
+    id: 1,
+    author: {
+      avatarUrl: 'https://media.licdn.com/dms/image/D5603AQGP3x3bHeu8Mg/profile-displayphoto-shrink_200_200/0/1719245738671?e=1727913600&v=beta&t=n0eKHa4yMlKGwbWovnDVkSoMjotReE_gLOp6soK_O_E',
+      name: 'Guilherme Jardim',
+      role: 'Fullstack Developer'
+    },
+    content: [
+      { type: 'paragraph', content: 'Fala galera', },
+      { type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifólio.', },
+    ],
+    publishedAt: new Date('2024-07-30 08:44:00')
+  },
+  {
+    id: 2,
+    author: {
+      avatarUrl: 'https://media.licdn.com/dms/image/D5603AQGP3x3bHeu8Mg/profile-displayphoto-shrink_200_200/0/1719245738671?e=1727913600&v=beta&t=n0eKHa4yMlKGwbWovnDVkSoMjotReE_gLOp6soK_O_E',
+      name: 'Chewbaca Azul',
+      role: 'Salinmaleco'
+    },
+    content: [
+      { type: 'paragraph', content: 'Fala galera', },
+      { type: 'paragraph', content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus molestiae cumque omnis magni quisquam repudiandae, sapiente voluptatibus rem rerum iusto voluptate minus magnam aliquam iste officiis corporis illo non dolorum?.', },
+    ],
+    publishedAt: new Date('2024-07-30 08:44:00')
+  }
+]
+
 export function Post() {
   return(
     <article className={styles.post}>
