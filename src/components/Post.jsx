@@ -36,6 +36,10 @@ function handleNewCommentChange() {
 
 }
 
+function deleteComment(comment) {
+  
+}
+
   return(
     <article className={styles.post}>
       <header>
@@ -84,7 +88,7 @@ function handleNewCommentChange() {
       <div className={styles.commentList}>
         {comments.map(comment => {
           return (
-            <Comment key={comment} content={comment} />
+            <Comment key={comment} content={comment} onDeleteComment={deleteComment} />
           )
         })}
       </div>
